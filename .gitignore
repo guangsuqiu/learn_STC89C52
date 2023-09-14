@@ -1,0 +1,9 @@
+# keil 关于51 的过滤规则
+
+#忽略所有Listings目录和目录里的内容
+Listings/
+Objects/
+
+# 忽略由打开.uvproj文件生成的文件
+*.uvgui.* 
+*.uvopt
