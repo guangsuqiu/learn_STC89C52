@@ -3,7 +3,7 @@
 #ifndef __MATRIXKEY_H__
 #define __MATRIXKEY_H__
 
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include "Delay.h"
 
 /**

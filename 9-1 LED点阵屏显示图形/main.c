@@ -1,4 +1,14 @@
-#include <STC89C5xRC.H>
+/***
+ * @Author       : guangsuqiu guangsuqiu@gmail.com
+ * @Date         : 2023-11-04 19:36:14
+ * @LastEditTime : 2023-11-07 00:18:19
+ * @FilePath     : \learn_STC89C52\9-1 LED点阵屏显示图形\main.c
+ * @Description  : 
+ * @Copyright (c) 2023 by guangsuqiu , All Rights Reserved. 
+ * @
+ */
+
+#include <REGX52.H>
 #include "Delay.h"
 
 sbit RCK=P3^5;	// PCLK

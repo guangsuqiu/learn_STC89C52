@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include <INTRINS.H>
 
 void Delay1ms(unsigned int ms)	//@11.0592MHz
@@ -21,12 +21,12 @@ void main()
 {
 	while(1)
 	{
-		if(P31==0)//按键被按下
+		if(P3_1==0)//按键被按下
 		{
 			Delay1ms(20);//按下消抖20毫秒
-			while(P31==0);//跳过按下的过程
+			while(P3_1==0);//跳过按下的过程
 			Delay1ms(20);//松开消抖20毫秒
-			P20=~P20;//让LED反转状态
+			P2_0=~P2_0;//让LED反转状态
 		}
 	}
 }

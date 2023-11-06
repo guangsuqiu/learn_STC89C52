@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include <INTRINS.H>
 
 void Delay1000ms(unsigned int s)	//@11.0592MHz

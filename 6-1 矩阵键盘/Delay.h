@@ -2,6 +2,6 @@
 #define __DELAY_H__
 
 #include <INTRINS.H>
-void DelayMs(unsigned char ms);		//@11.0592MHz
+void DelayMs(unsigned int ms);		//@11.0592MHz
 
 #endif

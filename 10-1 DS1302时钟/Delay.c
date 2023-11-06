@@ -1,16 +1,13 @@
-
 #include "Delay.h"
-void DelayMs(unsigned char ms)		//@11.0592MHz
+void DelayMs(unsigned int ms)		//@11.0592MHz
 {
 	while(ms--)
 	{
-		unsigned char data i, j;
+		unsigned char i, j;
 
 		_nop_();
-		_nop_();
-		_nop_();
-		i = 11;
-		j = 190;
+		i = 2;
+		j = 199;
 		do
 		{
 			while (--j);
@@ -18,12 +15,10 @@ void DelayMs(unsigned char ms)		//@11.0592MHz
 	}
 }
 
-void Delayus(unsigned char us)		//@11.0592MHz
+void Delayus(unsigned int us)		//@11.0592MHz
 {
 	while(us--)
 	{
-	_nop_();
-	_nop_();
-	_nop_();
+		_nop_();
 	}
 }

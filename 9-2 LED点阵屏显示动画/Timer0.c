@@ -1,6 +1,6 @@
 
 
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 
 void Timer0Init(void)	// 1ms 12MHz
 {

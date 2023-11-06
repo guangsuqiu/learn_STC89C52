@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include "intrins.h"
 #include "UART.h"
 #include "Delay.h"

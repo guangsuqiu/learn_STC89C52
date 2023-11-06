@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include <intrins.h> //使用_nop_();所添加的头文件
 
 void Delay1000ms()		//@11.0592MHz
@@ -22,9 +22,9 @@ main()
 {
 	while(1)
 	{
-		P20=0;
+		P2_0=0;
 		Delay1000ms();
-		P20=1;
+		P2_0=1;
 		Delay1000ms();
 	}
 }

@@ -1,5 +1,5 @@
 
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 
 //引脚配置：
 sbit LCD_RS=P2^6;

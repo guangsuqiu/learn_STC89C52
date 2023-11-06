@@ -1,5 +1,5 @@
 
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include "Timer0.h"
 #include "key.h"
 #include "intrins.h"

@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include <intrins.h>
 
 void Delay(unsigned int ms)		//@11.0592MHz
@@ -20,13 +20,13 @@ void Delay(unsigned int ms)		//@11.0592MHz
 void main()
 {
 	unsigned char num=0;
-	P20=0;
+	P2_0=0;
 	while(1)
 	{
-		if(P31==0)
+		if(P3_1==0)
 		{
 			Delay(20);
-			while(P31==0);
+			while(P3_1==0);
 			Delay(20);
 			
 			if(num==7)
@@ -36,10 +36,10 @@ void main()
 			
 			P2=~(0x1<<num);
 		}
-		else if(P30==0)
+		else if(P3_0==0)
 		{
 			Delay(20);
-			while(P30==0);
+			while(P3_0==0);
 			Delay(20);
 			
 			if(num==0)

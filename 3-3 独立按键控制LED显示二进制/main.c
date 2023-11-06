@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include <intrins.h>
 
 void Delay(unsigned int ms)		//@11.0592MHz
@@ -22,10 +22,10 @@ void main()
 	unsigned char num=0;
 	while(1)
 	{
-		if(P31==0)//按键按下 引脚拉低
+		if(P3_1==0)//按键按下 引脚拉低
 		{
 			Delay(20);
-			while(P31==0);//按键松开 打破循环
+			while(P3_1==0);//按键松开 打破循环
 			Delay(20);
 			
 			num++;

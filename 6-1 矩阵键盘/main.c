@@ -4,7 +4,7 @@
 
 unsigned char MatrixKeyNum;
 
-int main()
+void main()
 {
 	LCD_Init();
 	LCD_ShowString(1,1,"MatrixKey:");
@@ -16,5 +16,4 @@ int main()
 			LCD_ShowNum(2,1,MatrixKeyNum,2);
 		}
 	}
-	return 0;
 }

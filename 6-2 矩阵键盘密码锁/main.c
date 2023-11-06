@@ -8,7 +8,7 @@ unsigned char MatrixKeyNum;
 unsigned int  password;
 unsigned char cnt;
 
-int main()
+void main()
 {
 	LCD_Init();
 	LCD_ShowString(1,1,"Password:");
@@ -91,5 +91,4 @@ int main()
 			
 		}
 	}
-	return 0;
 }

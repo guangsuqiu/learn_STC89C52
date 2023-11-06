@@ -1,4 +1,4 @@
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include "intrins.h"
 #include "LCD1602.h"
 #include "DS1302.h"
@@ -115,7 +115,7 @@ void main()
 	
 	while(1)
 	{
-		KeyNum=Key();//读取键码
+		KeyNum=key();//读取键码
 		if(KeyNum==1)//按键1按下
 		{
 			if(MODE==0){MODE=1;TimeSetSelect=0;}//功能切换

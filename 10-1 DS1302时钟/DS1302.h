@@ -1,6 +1,6 @@
 #ifndef __DS1302_H__
 #define __DS1302_H__
-#include <STC89C5xRC.H>
+#include <REGX52.H>
 #include "intrins.h"
 
 sbit DS1302_SCLK=P3^6;
@@ -19,10 +19,10 @@ sbit DS1302_CE=P3^5;
 
 unsigned char DS1302_Time[];
 
-
+void DS1302_Init(void);
 void DS1302_WriteByte(unsigned char Command,Data);
 unsigned char DS1302_ReadByte(unsigned char Command);
-
-
+void DS1302_SetTime(void);
+void DS1302_ReadTime(void);
 
 #endif

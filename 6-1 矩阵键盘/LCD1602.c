@@ -1,4 +1,14 @@
-#include <STC89C5xRC.H>
+/***
+ * @Author       : guangsuqiu guangsuqiu@gmail.com
+ * @Date         : 2023-11-04 19:35:58
+ * @LastEditTime : 2023-11-07 00:17:00
+ * @FilePath     : \learn_STC89C52\6-1 矩阵键盘\LCD1602.c
+ * @Description  : 
+ * @Copyright (c) 2023 by guangsuqiu , All Rights Reserved. 
+ * @
+ */
+
+#include <REGX52.H>
 
 //引脚配置：
 sbit LCD_RS=P2^6;

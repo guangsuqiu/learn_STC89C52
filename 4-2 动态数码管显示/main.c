@@ -1,14 +1,14 @@
-#include <STC89C5xRC.H>
-#include <stdio.h>
-
-void DelayMs(unsigned char ms)		//@12.000MHz
+#include <REGX52.H>
+#include "intrins.h"
+void DelayMs(unsigned int ms)		//@11.0592MHz
 {
 	while(ms--)
 	{
 		unsigned char i, j;
 
-		i = 16;
-		j = 147;
+		_nop_();
+		i = 2;
+		j = 199;
 		do
 		{
 			while (--j);
@@ -22,14 +22,14 @@ void Nixie(unsigned char led,num)
 {
 	switch(led)
 	{
-		case 1:P24=0;P23=0;P22=0;break;
-		case 2:P24=0;P23=0;P22=1;break;
-		case 3:P24=0;P23=1;P22=0;break;
-		case 4:P24=0;P23=1;P22=1;break;
-		case 5:P24=1;P23=0;P22=0;break;
-		case 6:P24=1;P23=0;P22=1;break; 
-		case 7:P24=1;P23=1;P22=0;break;
-		case 8:P24=1;P23=1;P22=1;break;
+		case 1:P2_4=0;P2_3=0;P2_2=0;break;
+		case 2:P2_4=0;P2_3=0;P2_2=1;break;
+		case 3:P2_4=0;P2_3=1;P2_2=0;break;
+		case 4:P2_4=0;P2_3=1;P2_2=1;break;
+		case 5:P2_4=1;P2_3=0;P2_2=0;break;
+		case 6:P2_4=1;P2_3=0;P2_2=1;break; 
+		case 7:P2_4=1;P2_3=1;P2_2=0;break;
+		case 8:P2_4=1;P2_3=1;P2_2=1;break;
 	}
 	P0=NixieTable[num];
 #if 1
