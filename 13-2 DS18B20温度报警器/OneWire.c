@@ -18,7 +18,7 @@ unsigned char OneWire_Init(void)
     // delay 500us
     i = 227;
 	while (--i);
-    EA=0;
+    EA=1;
     return ack;
 }
 

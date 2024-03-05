@@ -8,7 +8,6 @@ unsigned char num;
 void main()
 {
 	UartInit();
-	
 	while(1)
 	{
 		sendByte(num);
